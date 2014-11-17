@@ -1,0 +1,21 @@
+
+    <div class="row">
+        <div class="col-md-3">
+            Liczba ofert: {{offersData.offersNumber}}
+        </div>
+        <ng-include src="'/app/home/offers/breadcrumbs.html'"></ng-include>
+    </div>
+    <div class="col-md-3">
+        <ng-include src="'/app/home/offers/categories.html'"> </ng-include>
+        <ng-include src="'/app/home/offers/filters.html'"> </ng-include>
+    </div>
+    <div class="col-md-9">
+        <div class="changeViewPanel">
+            <!--<a href="#" ng-click="changeView('two.html')"><img src="/img/offers/icon-2.png"></a>-->
+            <!--<a href="#" ng-click="changeView('three.html')"><img src="/img/offers/icon-3.png"></a>-->
+            <!--<a href="#" ng-click="changeView('list.html')"><img src="/img/offers/icon-list.png"></a>-->
+        </div>
+        <ng-include src="template"> </ng-include>
+        </div>
+        <div class="clearfix"></div>
+    </div>

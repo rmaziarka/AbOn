@@ -1,0 +1,10 @@
+
+<div ng-controller="breadcrumbsCtrl" class="col-md-9">
+    <span ng-repeat="cat in parentCategories">
+        <a href="" ng-click="categoryClicked(cat.id)">{{cat.name}} - </a>
+    </span>
+
+    <a ng-show="parentCategories.length"  href="#" ng-click="categoryClicked(selectedCategory.id)">
+        {{selectedCategory.name}}
+    </a>
+</div>

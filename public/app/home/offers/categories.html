@@ -1,0 +1,20 @@
+<div class="category-header">kategorie</div>
+<div ng-controller="categoriesCtrl" class="category-left">
+	<div ng-show="selectedCategory.parent">
+		<a ng-click="categoryClicked(selectedCategory.parent.id)" href="">Do góry</a>
+	</div>
+
+    <div ng-hide="selectedCategory.children.length">
+            <a ng-click="categoryClicked(selectedCategory.parent.id)" href="">
+                {{selectedCategory.name}} -- {{offersNumber}}
+            </a>
+
+    </div>
+	<ul ng-show="selectedCategory.children.length">
+		<li ng-repeat="cat in selectedCategory.children">
+			<a ng-click="categoryClicked(selectedCategory.parent.id)" href="">
+				{{cat.name}} -- {{cat.offersNumber}}
+			</a>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,21 @@
+{
+  "name": "abon",
+  "version": "0.0.0",
+  "authors": [
+    "maziarka.radoslaw@outlook.com <maziarka.radoslaw@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.2.22",
+    "angular-bootstrap": "~0.11.0",
+    "angular": "~1.2.22",
+	"angular-i18n":"1.2.22"
+  }
+}

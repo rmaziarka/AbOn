@@ -1,0 +1,20 @@
+
+<div ng-controller="filtersCtrl" class="filterController">
+    <form name="filters">
+        <div>
+            <div class="header-imput">cena</div>
+            <input ng-model="priceFrom" number placeholder="od" />
+        </div>
+
+
+        <div>
+            <div class="header-imput">-</div>
+            <input ng-model="priceTo" number placeholder="do" />
+        </div>
+
+
+        <div>
+            <input type="button" class="btn btn-primary" value="Filtruj" ng-click="filter()" ng-disabled="filterForm.$invalid"/>
+        </div>
+    </form>
+</div>

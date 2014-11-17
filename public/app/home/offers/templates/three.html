@@ -1,0 +1,18 @@
+<div data-ng-repeat="offer in offers" class="col-md-4">
+    <!--<img lazy-img lazy-img-src="offer.imageUrl" style="max-width: 25%; max-height: 25%;" />-->
+    <!--<img lazy-img lazy-img-src="offer.producerLogoUrl" style="max-width: 25%; max-height: 25%;" />-->
+    {{offer.name}}
+    <div class="price-producer">
+        <div class="label-offer">Cena producenta:</div>
+        <div class="value-offer">{{offer.producerPrice}} zł</div>
+    </div>
+    <div class="price-abon">
+        <div class="label-offer">cena ab-on:</div>
+        <div class="value-offer">{{offer.ourPrice}} zł</div>
+    </div>
+    <div class="save-price">
+        <div class="label-offer">oszczędzasz:</div>
+        <div class="value-offer">{{offer.saving}} zł</div>
+    </div>
+    <div class="details-offer btn" >szczegóły</div>
+</div>
